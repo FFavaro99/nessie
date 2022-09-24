@@ -9,6 +9,7 @@ public class Main {
         var applicationContext = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         var cpu = applicationContext.getBean(Cpu.class);
+        cpu.dump();
 
     }
 }
